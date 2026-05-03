@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="6" fill="#5c3d1e"/>
+  <!-- Tas body -->
+  <rect x="6" y="13" width="20" height="14" rx="2" fill="#c8955c"/>
+  <!-- Tas flap -->
+  <path d="M6 18 Q6 13 11 13 L21 13 Q26 13 26 18" fill="#b07a42" stroke="none"/>
+  <!-- Handvat -->
+  <path d="M11 13 Q11 8 16 8 Q21 8 21 13" fill="none" stroke="#c8955c" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Gesp/sluiting -->
+  <rect x="13.5" y="17" width="5" height="3.5" rx="1" fill="#5c3d1e"/>
+  <rect x="15" y="16" width="2" height="1.5" rx="0.5" fill="#5c3d1e"/>
+</svg>
