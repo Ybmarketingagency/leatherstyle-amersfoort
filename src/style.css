@@ -559,30 +559,12 @@ a:hover {
   font-size: 1.1rem;
 }
 
-.about-image-placeholder {
-  background: linear-gradient(135deg, var(--cream) 0%, var(--cream-dark) 100%);
-  border-radius: var(--radius);
-  padding: 60px 40px;
-  text-align: center;
-  border: 2px dashed rgba(212,116,14,0.2);
-}
-
-.store-icon {
-  display: block;
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 16px;
-  color: var(--orange);
-}
-
-.store-icon svg {
+.about-image img {
   width: 100%;
   height: 100%;
-}
-
-.about-image-placeholder p {
-  color: var(--text-light);
-  font-weight: 500;
+  object-fit: cover;
+  border-radius: var(--radius);
+  display: block;
 }
 
 /* ===== Contact ===== */
