@@ -77,25 +77,14 @@ a:hover {
 
 .logo {
   display: flex;
-  flex-direction: column;
-  line-height: 1.1;
+  align-items: center;
   text-decoration: none;
 }
 
-.logo-name {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--brown);
-  letter-spacing: 2px;
-}
-
-.logo-city {
-  font-size: 0.65rem;
-  font-weight: 600;
-  color: var(--orange);
-  letter-spacing: 4px;
-  text-transform: uppercase;
+.logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
@@ -687,8 +676,8 @@ a:hover {
   margin-bottom: 16px;
 }
 
-.footer-brand .logo-name {
-  color: var(--white);
+.footer-brand .logo-img {
+  height: 52px;
 }
 
 .footer-brand p {
