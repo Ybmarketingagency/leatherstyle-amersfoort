@@ -3,213 +3,423 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Leatherstyle Amersfoort | Binnenkort Online</title>
-  <meta name="description" content="Leatherstyle Amersfoort — Uw specialist in koffers, tassen en portemonnees. Onze nieuwe website is binnenkort beschikbaar." />
+  <title>Leatherstyle Amersfoort | Koffers, Tassen & Portemonnees</title>
+  <meta name="description" content="Leatherstyle Amersfoort - Uw specialist in koffers, tassen en portemonnees. Ruim assortiment topmerken aan de Langestraat in Amersfoort." />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body {
-      height: 100%;
-      overflow: hidden;
-      font-family: 'Inter', sans-serif;
-    }
-
-    body {
-      background: #2a1a0e;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      position: relative;
-    }
-
-    /* Subtle texture overlay */
-    body::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-      pointer-events: none;
-    }
-
-    /* Warm glow center */
-    body::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(139,69,19,0.18) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .card {
-      position: relative;
-      z-index: 1;
-      text-align: center;
-      padding: 60px 48px;
-      max-width: 560px;
-      width: 90%;
-    }
-
-    .logo-wrap {
-      margin-bottom: 40px;
-    }
-
-    .logo-wrap img {
-      height: 80px;
-      width: auto;
-    }
-
-    .divider {
-      width: 60px;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, #c8955c, transparent);
-      margin: 0 auto 36px;
-    }
-
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2rem, 5vw, 3rem);
-      color: #f5ede3;
-      line-height: 1.2;
-      margin-bottom: 20px;
-      font-weight: 700;
-    }
-
-    h1 span {
-      color: #c8955c;
-    }
-
-    p {
-      font-size: 1rem;
-      color: rgba(245,237,227,0.65);
-      line-height: 1.8;
-      font-weight: 300;
-      margin-bottom: 40px;
-    }
-
-    .contact-row {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 28px;
-      flex-wrap: wrap;
-      margin-bottom: 36px;
-    }
-
-    .contact-item {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      color: rgba(245,237,227,0.7);
-      font-size: 0.9rem;
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    .contact-item:hover { color: #c8955c; }
-
-    .contact-item svg {
-      width: 16px;
-      height: 16px;
-      opacity: 0.7;
-      flex-shrink: 0;
-    }
-
-    .social-row {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 14px;
-    }
-
-    .social-btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 42px;
-      height: 42px;
-      border-radius: 10px;
-      border: 1px solid rgba(200,149,92,0.3);
-      color: rgba(245,237,227,0.6);
-      text-decoration: none;
-      transition: background 0.2s, color 0.2s, border-color 0.2s;
-    }
-
-    .social-btn:hover {
-      background: #c8955c;
-      border-color: #c8955c;
-      color: #fff;
-    }
-
-    .social-btn svg { width: 18px; height: 18px; }
-
-    /* WhatsApp float */
-    .whatsapp {
-      position: fixed;
-      bottom: 28px;
-      right: 28px;
-      width: 54px;
-      height: 54px;
-      background: #25D366;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 20px rgba(37,211,102,0.35);
-      z-index: 10;
-      transition: transform 0.2s;
-    }
-    .whatsapp:hover { transform: scale(1.08); }
-    .whatsapp svg { width: 26px; height: 26px; }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
 </head>
 <body>
 
-  <div class="card">
-
-    <div class="logo-wrap">
-      <img src="https://i.imgur.com/UuVffIC.png" alt="Leatherstyle Amersfoort" />
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <img src="https://i.imgur.com/UuVffIC.png" alt="Leatherstyle Amersfoort" class="logo-img" />
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu openen">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#collectie">Collectie</a></li>
+        <li><a href="#merken">Merken</a></li>
+        <li><a href="#over-ons">Over Ons</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <div class="divider"></div>
-
-    <h1>Onze nieuwe website<br /><span>komt er aan</span></h1>
-
-    <p>We werken hard aan onze nieuwe website.<br />In de tussentijd kunt u ons gewoon bereiken in onze winkel of via onderstaande gegevens.</p>
-
-    <div class="contact-row">
-      <a href="tel:+31334638170" class="contact-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.13 12 19.79 19.79 0 0 1 1.06 3.38 2 2 0 0 1 3 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
-        033 - 463 8170
-      </a>
-      <a href="mailto:info@leatherstyleamersfoort.nl" class="contact-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        info@leatherstyleamersfoort.nl
-      </a>
-      <span class="contact-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        Langestraat 73, Amersfoort
-      </span>
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Uw Specialist in<br /><span class="accent">Koffers, Tassen &amp; Portemonnees</span></h1>
+      <p class="hero-sub">Al jaren het vertrouwde adres voor kwalitatief lederwerk in het hart van Amersfoort</p>
+      <div class="hero-buttons">
+        <a href="#collectie" class="btn btn-primary">Bekijk Collectie</a>
+        <a href="#contact" class="btn btn-outline">Bezoek Ons</a>
+      </div>
     </div>
+  </section>
 
-    <div class="social-row">
-      <a href="https://www.instagram.com/leatherstyleamersfoort/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/></svg>
-      </a>
-      <a href="https://www.facebook.com/leatherstyleamersfoort/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-      </a>
+  <!-- Collectie -->
+  <section class="section" id="collectie">
+    <div class="container">
+      <h2 class="section-title">Onze Collectie</h2>
+      <p class="section-subtitle">In onze winkel hebben wij een ruim assortiment waaruit u kunt kiezen</p>
+      <div class="categories">
+
+        <div class="category-card">
+          <div class="category-image">
+            <img src="https://i.imgur.com/ROycI1G.jpg" alt="Collectie reiskoffers" loading="lazy" />
+          </div>
+          <div class="category-body">
+            <h3>Koffers</h3>
+            <p>Van handbagage tot grote reiskoffers. Hardcase en softcase modellen van topmerken voor elke reis.</p>
+            <ul class="category-features">
+              <li>Handbagage &amp; cabinekoffers</li>
+              <li>Medium &amp; grote reiskoffers</li>
+              <li>Koffersets</li>
+              <li>Hardcase &amp; softcase</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="category-card">
+          <div class="category-image">
+            <img src="https://i.imgur.com/a9Sxjev.jpg" alt="Collectie tassen" loading="lazy" />
+          </div>
+          <div class="category-body">
+            <h3>Tassen</h3>
+            <p>Schoudertassen, handtassen, laptoptassen en rugzakken. Voor werk, school en vrije tijd.</p>
+            <ul class="category-features">
+              <li>Handtassen &amp; schoudertassen</li>
+              <li>Laptoptassen &amp; werktassen</li>
+              <li>Rugzakken</li>
+              <li>Crossbody &amp; heuptassen</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="category-card">
+          <div class="category-image">
+            <img src="https://i.imgur.com/CvYrbl6.jpg" alt="Collectie portemonnees" loading="lazy" />
+          </div>
+          <div class="category-body">
+            <h3>Portemonnees</h3>
+            <p>Dames- en herenportemonnees in diverse stijlen. Van compact tot uitgebreid, altijd van kwaliteitsleer.</p>
+            <ul class="category-features">
+              <li>Damesportemonnees</li>
+              <li>Herenportemonnees</li>
+              <li>Pasjeshouders &amp; cardprotectors</li>
+              <li>Sleutelhouders</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Product galerij -->
+      <div class="product-gallery">
+        <h3 class="gallery-title">Uit onze winkel</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="https://i.imgur.com/9izMTKc.jpg" alt="American Tourister koffer" loading="lazy" />
+            <span class="gallery-label">Schoudertas</span>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.imgur.com/ndeoemu.jpg" alt="Eastpak rugzak" loading="lazy" />
+            <span class="gallery-label">Rugzak</span>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.imgur.com/3I9WnGB.jpg" alt="Samsonite koffer" loading="lazy" />
+            <span class="gallery-label">Reiskoffer</span>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.imgur.com/d6fGQCH.jpg" alt="Fjällräven tas" loading="lazy" />
+            <span class="gallery-label">Portemonnee</span>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.imgur.com/iWYr3tt.jpg" alt="American Tourister tas" loading="lazy" />
+            <span class="gallery-label">Laptoptas</span>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.imgur.com/Ni8MrLS.jpg" alt="Eastpak tas" loading="lazy" />
+            <span class="gallery-label">Handtas</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-  </div>
+  <!-- Merken -->
+  <section class="section section-alt" id="merken">
+    <div class="container">
+      <h2 class="section-title">Onze Merken</h2>
+      <p class="section-subtitle">Wij werken samen met de beste merken voor kwaliteit die u kunt vertrouwen</p>
 
-  <a href="https://wa.me/31334638170?text=Hallo%2C%20ik%20heb%20een%20vraag%20over%20uw%20producten." class="whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-    <svg viewBox="0 0 32 32" fill="white"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.132 6.743 3.05 9.377L1.054 31.456l6.31-2.022A15.89 15.89 0 0 0 16.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.32 22.598c-.39 1.1-1.932 2.012-3.172 2.278-.85.18-1.96.324-5.698-1.224-4.784-1.98-7.862-6.834-8.1-7.15-.228-.316-1.918-2.556-1.918-4.876 0-2.32 1.214-3.462 1.646-3.936.39-.428 1.026-.612 1.634-.612.198 0 .376.01.536.018.472.02.708.048 1.02.788.39.928 1.34 3.268 1.458 3.506.12.238.24.56.08.876-.148.326-.278.526-.516.808-.238.282-.49.498-.728.738-.238.238-.486.494-.208.968.278.474 1.236 2.038 2.654 3.302 1.824 1.622 3.36 2.126 3.836 2.362.474.238.752.198 1.03-.118.278-.318 1.194-1.388 1.512-1.866.308-.474.626-.394 1.058-.236.434.158 2.762 1.304 3.236 1.54.474.238.79.356.908.554.118.198.118 1.148-.272 2.248z"/></svg>
+      <!-- Samsonite -->
+      <div class="brand-showcase">
+        <div class="brand-header">
+          <h3>Samsonite</h3>
+          <span class="brand-tag">Koffers &amp; Tassen</span>
+        </div>
+        <div class="brand-products">
+          <div class="brand-product">
+            <img src="https://i.imgur.com/UGO1lH2.jpg" alt="Samsonite 1" loading="lazy" />
+            <span>Reiskoffer</span>
+          </div>
+          <div class="brand-product">
+            <img src="https://i.imgur.com/X4QVPI2.jpg" alt="Samsonite 2" loading="lazy" />
+            <span>Cabinekoffer</span>
+          </div>
+          <div class="brand-product">
+            <img src="https://i.imgur.com/6QTmdi6.jpg" alt="Samsonite 3" loading="lazy" />
+            <span>Kofferset</span>
+          </div>
+          <div class="brand-product">
+            <img src="https://i.imgur.com/CtlilIi.jpg" alt="Samsonite 4" loading="lazy" />
+            <span>Hardcase</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Berba -->
+      <div class="brand-showcase">
+        <div class="brand-header">
+          <h3>Berba</h3>
+          <span class="brand-tag">Tassen &amp; Portemonnees</span>
+        </div>
+        <div class="brand-products">
+          <div class="brand-product">
+            <img src="https://i.imgur.com/Sdz7qd9.jpg" alt="Berba 1" loading="lazy" />
+            <span>Handtas</span>
+          </div>
+          <div class="brand-product">
+            <img src="https://i.imgur.com/XhpGSL5.jpg" alt="Berba 2" loading="lazy" />
+            <span>Schoudertas</span>
+          </div>
+          <div class="brand-product">
+            <img src="https://i.imgur.com/MMzDKKk.jpg" alt="Berba 3" loading="lazy" />
+            <span>Portemonnee</span>
+          </div>
+          <div class="brand-product">
+            <img src="https://i.imgur.com/31an1Rd.jpg" alt="Berba 4" loading="lazy" />
+            <span>Crossbody</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Castelijn & Beerens -->
+      <div class="brand-showcase">
+        <div class="brand-header">
+          <h3>Castelijn &amp; Beerens</h3>
+          <span class="brand-tag">Leren Tassen &amp; Accessoires</span>
+        </div>
+        <div class="brand-products">
+          <div class="brand-product">
+            <img src="https://i.imgur.com/JK6FyLe.jpg" alt="Castelijn & Beerens 1" loading="lazy" />
+            <span>Leren Tas</span>
+          </div>
+          <div class="brand-product">
+            <img src="https://i.imgur.com/lWnbOpR.jpg" alt="Castelijn & Beerens 2" loading="lazy" />
+            <span>Aktetas</span>
+          </div>
+          <div class="brand-product">
+            <img src="https://i.imgur.com/eunGETK.jpg" alt="Castelijn & Beerens 3" loading="lazy" />
+            <span>Schoudertas</span>
+          </div>
+          <div class="brand-product">
+            <img src="https://i.imgur.com/ryqnCqL.jpg" alt="Castelijn & Beerens 4" loading="lazy" />
+            <span>Portemonnee</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Chesterfield Brand -->
+      <div class="brand-showcase">
+        <div class="brand-header">
+          <h3>The Chesterfield Brand</h3>
+          <span class="brand-tag">Leren Tassen</span>
+        </div>
+        <div class="brand-products">
+          <div class="brand-product">
+            <img src="https://i.imgur.com/DKc9gGO.jpg" alt="Chesterfield 1" loading="lazy" />
+            <span>Leren Rugzak</span>
+          </div>
+          <div class="brand-product">
+            <img src="https://i.imgur.com/elqSEC2.jpg" alt="Chesterfield 2" loading="lazy" />
+            <span>Aktetas</span>
+          </div>
+          <div class="brand-product">
+            <img src="https://i.imgur.com/N4THxys.jpg" alt="Chesterfield 3" loading="lazy" />
+            <span>Handtas</span>
+          </div>
+          <div class="brand-product">
+            <img src="https://i.imgur.com/kr3EYoy.jpg" alt="Chesterfield 4" loading="lazy" />
+            <span>Schoudertas</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meer merken strip -->
+      <div class="more-brands">
+        <h4>Ook verkrijgbaar</h4>
+        <div class="more-brands-list">
+          <span class="more-brand-chip">Travelite</span>
+          <span class="more-brand-chip">Jump</span>
+          <span class="more-brand-chip">Saccoo</span>
+          <span class="more-brand-chip">De Rooy Amsterdam</span>
+          <span class="more-brand-chip">Cowboysbag</span>
+          <span class="more-brand-chip">The Bridge</span>
+          <span class="more-brand-chip">Gigi Fratelli</span>
+          <span class="more-brand-chip">Claudio Ferrici</span>
+          <span class="more-brand-chip">My Walit</span>
+          <span class="more-brand-chip">Bear</span>
+          <span class="more-brand-chip">Healthy Back Bag</span>
+          <span class="more-brand-chip">Herschel</span>
+          <span class="more-brand-chip">Kipling</span>
+          <span class="more-brand-chip">Dakine</span>
+          <span class="more-brand-chip">Secrid</span>
+          <span class="more-brand-chip">American Tourister</span>
+          <span class="more-brand-chip">Eastpak</span>
+          <span class="more-brand-chip">Fj&auml;llr&auml;ven</span>
+        </div>
+        <p class="brands-note">En nog vele andere merken. Kom langs in onze winkel voor het volledige aanbod!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Over Ons -->
+  <section class="section" id="over-ons">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title text-left">Over Leatherstyle</h2>
+          <p>Sinds 1982 zijn wij het vertrouwde adres voor koffers, tassen en portemonnees in het hart van Amersfoort. Met meer dan 40 jaar ervaring weten wij precies wat kwaliteit inhoudt &mdash; en wat onze klanten zoeken.</p>
+          <p>Ons enthousiaste team staat voor u klaar met eerlijk en persoonlijk advies. Of u nu op zoek bent naar een stevige reiskoffer, een stijlvolle handtas of een praktische portemonnee &mdash; wij nemen de tijd om u te helpen de juiste keuze te maken.</p>
+          <div class="about-highlights">
+            <div class="highlight">
+              <span class="highlight-icon">&#10003;</span>
+              <span>Sinds 1982</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">&#10003;</span>
+              <span>40+ jaar ervaring</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">&#10003;</span>
+              <span>Persoonlijk advies</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">&#10003;</span>
+              <span>Topmerken</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="https://i.imgur.com/N1ThWny.jpg" alt="Team Leatherstyle Amersfoort" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact &amp; Openingstijden</h2>
+      <div class="contact-grid">
+
+        <div class="contact-card">
+          <h3>Bezoek Ons</h3>
+          <div class="contact-info">
+            <div class="contact-item">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <strong>Adres</strong><br />
+                Langestraat 73<br />
+                3811 AC Amersfoort
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <strong>Telefoon</strong><br />
+                <a href="tel:+31334638170">033 - 463 8170</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <div>
+                <strong>E-mail</strong><br />
+                <a href="mailto:info@leatherstyleamersfoort.nl">info@leatherstyleamersfoort.nl</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <h3>Openingstijden</h3>
+          <table class="hours-table">
+            <tr><td>Maandag</td><td class="closed">Gesloten</td></tr>
+            <tr><td>Dinsdag</td><td>10:00 &ndash; 17:30</td></tr>
+            <tr><td>Woensdag</td><td>10:00 &ndash; 17:30</td></tr>
+            <tr><td>Donderdag</td><td>10:00 &ndash; 19:00 <span class="badge">Koopavond</span></td></tr>
+            <tr><td>Vrijdag</td><td>10:00 &ndash; 17:30</td></tr>
+            <tr><td>Zaterdag</td><td>10:00 &ndash; 17:00</td></tr>
+            <tr><td>Zondag</td><td>13:00 &ndash; 16:30</td></tr>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- Google Maps embed -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.8!2d5.3876!3d52.1553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6462c0c02b5ed%3A0x9b85d58ad2e5d76e!2sLangestraat%2073%2C%203811%20AC%20Amersfoort!5e0!3m2!1snl!2snl!4v1700000000000!5m2!1snl!2snl"
+          width="100%"
+          height="350"
+          style="border:0; border-radius: 12px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Leatherstyle Amersfoort locatie"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <img src="https://i.imgur.com/UuVffIC.png" alt="Leatherstyle Amersfoort" class="logo-img" />
+          </a>
+          <p>Uw specialist in koffers, tassen en portemonnees sinds jaar en dag in het centrum van Amersfoort.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/leatherstyleamersfoort/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://www.facebook.com/leatherstyleamersfoort/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Navigatie</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#collectie">Collectie</a></li>
+            <li><a href="#merken">Merken</a></li>
+            <li><a href="#over-ons">Over Ons</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>Langestraat 73<br />3811 AC Amersfoort</p>
+          <p><a href="tel:+31334638170">033 - 463 8170</a></p>
+          <p><a href="mailto:info@leatherstyleamersfoort.nl">info@leatherstyleamersfoort.nl</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Leatherstyle Amersfoort. Alle rechten voorbehouden. &nbsp;|&nbsp; Gemaakt door <a href="https://techazura.nl" target="_blank" rel="noopener noreferrer">TechAzura</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Widget -->
+  <a href="https://wa.me/31334638170?text=Hallo%2C%20ik%20heb%20een%20vraag%20over%20uw%20producten." class="whatsapp-widget" target="_blank" rel="noopener noreferrer" aria-label="Chat via WhatsApp">
+    <svg viewBox="0 0 32 32" fill="white">
+      <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.132 6.743 3.05 9.377L1.054 31.456l6.31-2.022A15.89 15.89 0 0 0 16.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.32 22.598c-.39 1.1-1.932 2.012-3.172 2.278-.85.18-1.96.324-5.698-1.224-4.784-1.98-7.862-6.834-8.1-7.15-.228-.316-1.918-2.556-1.918-4.876 0-2.32 1.214-3.462 1.646-3.936.39-.428 1.026-.612 1.634-.612.198 0 .376.01.536.018.472.02.708.048 1.02.788.39.928 1.34 3.268 1.458 3.506.12.238.24.56.08.876-.148.326-.278.526-.516.808-.238.282-.49.498-.728.738-.238.238-.486.494-.208.968.278.474 1.236 2.038 2.654 3.302 1.824 1.622 3.36 2.126 3.836 2.362.474.238.752.198 1.03-.118.278-.318 1.194-1.388 1.512-1.866.308-.474.626-.394 1.058-.236.434.158 2.762 1.304 3.236 1.54.474.238.79.356.908.554.118.198.118 1.148-.272 2.248z"/>
+    </svg>
   </a>
 
+  <script type="module" src="/src/main.js"></script>
 </body>
 </html>
